@@ -1,8 +1,8 @@
 body{
   font-family:Arial, Helvetica, sans-serif;
   font-size:font-size: 62.5%; /* font-size 1em = 10px */
-  background: #A3B2D9;
-  color: #2C2F56;
+  background: #FFFFFF;
+  color: #000000;
 }
 
 table{
@@ -15,22 +15,22 @@ th {
   text-align: center;
   font-weight: bold;
   padding: 8px 2px;
-  border: 2px solid #245F93;
-  background: #2C2F56;
-  color: #FFFFFF;
+  border: 2px solid #de411b;
+  background: #de411b;
+  color:#FFFFFF;
   width:200px;
 }
 
 td {
   text-align: center;
   padding: 2px;
-  border: 2px solid #245F93;
-  background: #e3f0f7;
+  border: 2px solid #de411b;
+  background: #FFFFFF;
 }
 
 input, select, .button {
-  background: #e3f0f7;
-  border:1px solid #2C2F56;
+  background: #FFFFFF;
+  border:1px solid #de411b;
 }
 
 a {

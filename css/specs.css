@@ -14,21 +14,21 @@ table{
 th {
   font-weight: bold;
   padding: 8px 2px;
-  border: 2px solid #245F93;
-  background: #2C2F56;
+  border: 2px solid #de411b;
+  background: #de411b;
   color: #FFFFFF;
 }
 
 td {
   vertical-align: top;
   padding: 2px;
-  border: 2px solid #245F93;
+  border: 2px solid #de411b;
   background: #e3f0f7;
 }
 
 input, select, .button {
   background: #e3f0f7;
-  border:1px solid #2C2F56;
+  border:1px solid #de411b;
 }
 
 table#releases th, table#releases td {
