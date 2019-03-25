@@ -3,7 +3,18 @@
 <head>
 <meta charset="utf-8" />
 <title>Province Searcher</title>
-<link rel="stylesheet" href="css/provinces.css" />
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css"></style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/provinces.css" />
+
 <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
 <script type="text/javascript" src="js/provinces.js"></script>
@@ -87,13 +98,20 @@
 </head>
 <body>
 
-<h1>Province Searcher</h1>
-<p>Search data about Provinces of Argentina</p>
-<div id="filter-wrapper">
+<div class="navbar navbar-fixed-top orange">
+    <div class="orange">
+        <div class="container">
+            <span class="brand">Province Searcher<span id='version'></span></span>
+        </div>
+    </div>
+</div>
+
+<em><h5 class="text-center mb-3">Search data about Provinces of Argentina</h5></em>
+<div id="filter-wrapper"  class="text-center">
     <form id="filters" action="">
-         <label for="region">Region</label>
+         <label for="region" class="mr-1">Región</label>
             <select id="region"></select>
-        <label for="input">Name</label>
+        <label for="input" class="ml-3 mr-1">Name</label>
         <input id="input" class="input" type="text" />
         <input type="submit" class="button"  value="search!"/>
     </form>
@@ -101,9 +119,9 @@
 <div id="data-wrapper">
     <table id="data" style='display:none'>
         <thead>
-					<tr>
-            <th>Region <a href='' name='region' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Name <a href='' name='name' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Capital <a href='' name='capital' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Population <a href='' name='inhabitants' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th><th>Km<sup>2</sup><a href='' name='area' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th>
-					</tr>
+			<tr>
+                <th>Region <a href='' name='region' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Name <a href='' name='name' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Capital <a href='' name='capital' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Population <a href='' name='inhabitants' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th><th>Km<sup>2</sup><a href='' name='area' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th>
+			</tr>
         </thead>
         <tbody>
 				</tbody>

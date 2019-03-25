@@ -3,6 +3,8 @@
 <head>
 <meta charset="utf-8" />
 
+    <title>Province Searcher</title>
+
     <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <link href="css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
@@ -10,12 +12,15 @@
     <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
 
-    <title>Province Searcher</title>
-<link rel="stylesheet" href="css/provinces.css" />
-<script type="text/javascript" src="js/jquery-1.7.min.js"></script>
-<script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
-<script type="text/javascript">
-    var provinces = [
+    <!-- Favicon -->
+    <link rel="icon" href="/images/favicon.png" type="image/png" />
+    <link rel="shortcut icon" href="/favicon.ico" />
+    <link rel="stylesheet" href="css/provinces.css" />
+
+    <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
+    <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
+    <script type="text/javascript">
+        var provinces = [
                         {'region' : '', 'name' : 'Ciudad Autónoma de Buenos Aires', 'capital' : 'C.A.B.A', 'inhabitants' : '2.890.151', 'area' : '200' },
                         {'region' : '', 'name' : 'Buenos Aires', 'capital' : 'La Plata', 'inhabitants' : '15.625.084', 'area' : '307.571' },
                         {'region' : 'Norte Grande Argentino', 'name' : 'Catamarca', 'capital' : 'San Fernando del Valle de Catamarca', 'inhabitants' : '367.828', 'area' : '99.633' },
@@ -107,23 +112,27 @@
     </div>
 </div>
 
-<em><h5>Search data about Provinces of Argentina</h5></em>
+<em><h5 class="text-center mb-3">Search data about Provinces of Argentina</h5></em>
 
-<div id="filter-wrapper">
+<div id="filter-wrapper" class="text-center">
     <form id="filters" action="">
-         <label for="region">Region</label>
+         <label for="region" class="mr-1">Región</label>
             <select id="region"></select>
-        <label for="input">Name</label>
+        <label for="input" class="ml-3 mr-1">Name</label>
         <input id="input" class="input" type="text" />
         <input type="submit" class="button"  value="search!"/>
    </form>
 </div>
-<div id="data-wrapper">
-    <table style="display:none" id="data">
+<div id="data-wrapper" >
+    <table style="display:none;" id="data" class="text-center">
         <thead>
-					<tr>
-            <th>Region</th><th>Name</th><th>Population</th><th>Capital</th><th>Km<sup>2</sup></th>
-					</tr>
+			<tr>
+                <th>Region</th>
+                <th>Name</th>
+                <th>Population</th>
+                <th>Capital</th>
+                <th>Km<sup>2</sup></th>
+			</tr>
         </thead>
         <tbody>
 				</tbody>

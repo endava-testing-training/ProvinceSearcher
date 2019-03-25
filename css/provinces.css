@@ -1,36 +1,37 @@
-body{
+body {
   font-family:Arial, Helvetica, sans-serif;
   font-size:font-size: 62.5%; /* font-size 1em = 10px */
-  background: #FFFFFF;
-  color: #000000;
+  background: #FFF;
+  color: #000;
 }
 
-table{
-  border-spacing: 0px;
+table {
+  border-spacing: 0;
   border-collapse: collapse;
-  margin:20px 0 0 0;
+  width: auto;
+  margin: 0 auto;
 }
 
 th {
   text-align: center;
   font-weight: bold;
   padding: 8px 2px;
-  border: 2px solid #de411b;
-  background: #de411b;
+  border: 2px solid #EB7B11;
+  background: #EB7B11;
   color:#FFF;
   width:200px;
 }
 
 td {
   text-align: center;
-  padding: 2px;
-  border: 2px solid #de411b;
+  padding: 4px 2px;
+  border: 1px solid #EB7B11;
   background: #FFF;
 }
 
 input, select, .button {
   background: #FFF;
-  border:1px solid #de411b;
+  border: 1px solid #EB7B11;
   height: 34px;
 }
 
@@ -38,3 +39,14 @@ a {
   color: #FFF;
   text-decoration: none;
 }
+
+.button {
+    background-color: #EB7B11;
+    padding: 4px 8px;
+    color: #FFF;
+}
+
+.button:hover {
+    background-color: #de411b;
+}
+
