@@ -2,7 +2,15 @@
 <html lang="es">
 <head>
 <meta charset="utf-8" />
-<title>Province Searcher</title>
+
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+    <style type="text/css"></style>
+    <link href="css/bootstrap-responsive.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css" integrity="sha384-Smlep5jCw/wG7hdkwQ/Z5nLIefveQRIY9nfy6xoR1uRYBtpZgI6339F5dgvm/e9B" crossorigin="anonymous">
+
+    <title>Province Searcher</title>
 <link rel="stylesheet" href="css/provinces.css" />
 <script type="text/javascript" src="js/jquery-1.7.min.js"></script>
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
@@ -86,12 +94,21 @@
       
       };
     })(jQuery);
+
 </script>
 </head>
-<body>
 
-<h1>Province Searcher</h1>
-<p>Search data about Provinces of Argentina</p>
+<body>
+<div class="navbar navbar-fixed-top orange">
+    <div class="orange">
+        <div class="container">
+            <span class="brand">Province Searcher<span id='version'></span></span>
+        </div>
+    </div>
+</div>
+
+<em><h5>Search data about Provinces of Argentina</h5></em>
+
 <div id="filter-wrapper">
     <form id="filters" action="">
          <label for="region">Region</label>
@@ -99,7 +116,7 @@
         <label for="input">Name</label>
         <input id="input" class="input" type="text" />
         <input type="submit" class="button"  value="search!"/>
-    </form>
+   </form>
 </div>
 <div id="data-wrapper">
     <table style="display:none" id="data">

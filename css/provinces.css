@@ -17,7 +17,7 @@ th {
   padding: 8px 2px;
   border: 2px solid #de411b;
   background: #de411b;
-  color:#FFFFFF;
+  color:#FFF;
   width:200px;
 }
 
@@ -25,15 +25,16 @@ td {
   text-align: center;
   padding: 2px;
   border: 2px solid #de411b;
-  background: #FFFFFF;
+  background: #FFF;
 }
 
 input, select, .button {
-  background: #FFFFFF;
+  background: #FFF;
   border:1px solid #de411b;
+  height: 34px;
 }
 
 a {
-  color: #FFFFFF;
+  color: #FFF;
   text-decoration: none;
 }
