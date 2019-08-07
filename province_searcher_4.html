@@ -20,7 +20,7 @@
 <script type="text/javascript" src="js/jquery.tmpl.min.js"></script>
 <script type="text/javascript" src="js/provinces.js"></script>
 <script type="text/javascript">
-    var provincias = [
+    var provinces = [
                         {'region' : 'None', 'name' : 'Ciudad Autónoma de Buenos Aires', 'capital' : 'C.A.B.A', 'inhabitants' : '2.890.151', 'area' : '200' },
                         {'region' : 'None', 'name' : 'Buenos Aires', 'capital' : 'La Plata', 'inhabitants' : '15.625.084', 'area' : '307.571' },
                         {'region' : 'Norte Grande Argentino', 'name' : 'Catamarca', 'capital' : 'San Fernando del Valle de Catamarca', 'inhabitants' : '367.828', 'area' : '99.633' },
@@ -48,10 +48,11 @@
                    ];
 
     function search_data() {
+        $("#data").attr({ "style": "" });
         var data_to_search = new RegExp(".*"+$("#input")[0].value+".*","i");
         var region_to_search = $("#region").val();
         var result = [];
-        $(provincias).each(function(){
+        $(provinces).each(function(){
             if (data_to_search.exec(this.name) && (region_to_search == "All" || region_to_search == this.region)) {
                 result.push(this);
             }
@@ -62,7 +63,7 @@
     function load_regions() {
         $("<option value='All'>All</option>").appendTo( "#region" );
         var visited = [];
-        $(provincias).each(function(){
+        $(provinces).each(function(){
             var region = this.region;
             if (visited.indexOf(region) == -1) {
                 visited.push(region);
@@ -86,10 +87,10 @@
 
     $(document).ready(function() {
         load_regions();
-        load_data(provincias);
-        $("#input").keyup(function(event){
-            if (event.keyCode != 13) {
-                load_data(search_data());
+        load_data(provinces);
+           $("#input").keyup(function(event){
+          if (event.keyCode != 13) {
+               load_data(search_data());
             }
         });
         $("#filters").submit(function() {
@@ -122,19 +123,24 @@
 <em><h5 class="text-center mb-3">Search data about Provinces of Argentina</h5></em>
 <div id="filter-wrapper" class="text-center">
     <form id="filters" action="">
-         <label for="region" class="mr-1">Región</label>
-            <select id="region" onchange="load_data(search_data())"></select>
+        <label for="region" class="mr-1">Región</label>
+        <select id="region"></select>
         <label for="input" class="ml-3 mr-1">Name</label>
         <input id="input" class="input" type="text" />
+        <input type="submit" class="button" value="search!" />
         
     </form>
 </div>
 <div id="data-wrapper">
     <table id="data">
         <thead>
-					<tr>
-            <th>Region <a href='' name='region' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Name <a href='' name='name' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Capital <a href='' name='capital' order='asc' onclick="return sort_by($(this))">&uArr;</a></th><th>Population <a href='' name='inhabitants' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th><th>Km<sup>2</sup><a href='' name='area' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th>
-					</tr>
+        <tr>
+            <th>Region <a href='' name='region' order='asc' onclick="return sort_by($(this))">&uArr;</a></th>
+            <th>Name <a href='' name='name' order='asc' onclick="return sort_by($(this))">&uArr;</a></th>
+            <th>Capital <a href='' name='capital' order='asc' onclick="return sort_by($(this))">&uArr;</a></th>
+            <th>Population <a href='' name='inhabitants' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th>
+            <th>Km<sup>2</sup><a href='' name='area' order='asc' onclick="return sort_by($(this),to_num)">&uArr;</a></th>
+        </tr>
         </thead>
         <tbody>
 				</tbody>

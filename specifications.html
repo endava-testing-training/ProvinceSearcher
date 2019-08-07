@@ -58,39 +58,39 @@
 
             <h2>Description</h2>
             <ul>
-                <li>As a user I'll be able to search information about the Argentinian Provinces</li>
+                <li> As an Administrator User I want to be able to search information about the Argentinian Provinces.</li>
             </ul>
             <h2>AC: acceptance criteria</h2>
             <ul>
-                <li>The title page should be "Province Searcher"</li>
-                <li>The sub title page should be "Search data about Provinces of Argentina"</li>
-                <li>As a user I'm able to search by different filters</li>
+                <li>The title of the page is "Province Searcher", capitalized and in orange color."</li>
+                <li>The page subtitle is "Search data about Provinces of Argentina", black color, italic.</li>
+                <li>As an Administrator User I'm able to search by different filters:</li>
                 <ul>
-                    <li>By region, should be a dropdown with the list of regions (Centro, Ninguna, Norte Grande Argentina, Nuevo Cuyo and Patagonia)Also options 'All' and 'None' are available. The options should be ordered alphabetically ascendant </li>
-                    <li>By province name, text box with 30 characters. Default options is empty.</li>
+                    <li>Region: Dropdown with a list of regions (Centro, Norte Grande Argentino, Nuevo Cuyo and Patagónica). Also options 'All' and 'None' are available. The options are ordered alphabetically ascendant. ‘All’ option by default. </li>
+                    <li>Name: text box. Default option is empty</li>
                 </ul>
-                <li>As a user I make a search and obtain the following results</li>
-                <ul>
-                    <li>A results list is displayed corresponding with criteria entered on search</li>
-                    <li>Columns</li>
-                        <ul>
-                            <li>Region: corresponding to the province</li>
+                <li>Search button: ‘search!’, orange background, white characters.</li>
+                <li>As an Administrator User I want to make a search and obtain the results that matches with criteria entered.</li>
+                <li>Search Results are displayed on a table with the following columns:</li>
+                         <ul>
+                            <li>Region: Name of the region</li>
                             <li>Name: Name of the province</li>
+                            <li>Capital: Capital city of the Province</li>
                             <li>Population: Province Population</li>
-                            <li>Capital: Province Capital city</li>
-                            <li>KM: Province extension in km</li>
+                            <li>KM2: Province extension in km2.</li>
                         </ul>
                     </li>
-                    <li>The results are alphabetically ordered by default</li>
-                    <li>The results contains:</li>
+                    <li>The search results are ordered alphabetically by province name by default.</li>
+                    <li>The search results contains:</li>
                         <ul>
-                            <li>The provinces corresponding to the selected region</li>
-                            <li>The provinces where Name match with criteria entered in Name field</li>
+                            <li>The provinces corresponding to the selected region.</li>
+                            <li>The provinces where Name match with criteria entered in Name field.</li>
+                            <li>The provinces that matches with Region and Name entered.</li>
                         </ul>
                     </li>
                 </ul>
-                <li>As a user I'm able to order by any of the columns</li>
-                <li>The information should match with the one in “Provinces of Argentina” from wikipedia  (<a href="https://en.wikipedia.org/wiki/Provinces_of_Argentina" target="_blank">https://en.wikipedia.org/wiki/Provinces_of_Argentina</a>)
+                <li>As an Administrator User I'm able to sort by any of the columns (ascendant and descendant).</li>
+                <li>The information should match with the one in “Provinces of Argentina” from wikipedia   (<a href="https://es.wikipedia.org/wiki/Regiones_integradas_(Argentina)" target="_blank">https://es.wikipedia.org/wiki/Regiones_integradas_(Argentina)</a>)
                 <li>If there are not matching results the following message “There are none province with the selected filters”</li>
             </ul>
 
