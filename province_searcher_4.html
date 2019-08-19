@@ -83,19 +83,19 @@
 	    }
     }
 
+
+
     $(document).ready(function() {
         load_regions();
         load_data(provinces);
         $("#input").keyup(function(event){
-         if (event.keyCode != 13) {
-               load_data(search_data());
-            }
         });
         $("#filters").submit(function() {
             load_data(search_data());
             return false;
         });
-    });
+
+   });
 </script>
 </head>
 <body>
